@@ -1,0 +1,17 @@
+# Compiled Source files
+*.o
+*.exe
+
+# OS specific files
+.DS_STORE*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Vim buffers
+*~
+*.swp
+
+#The linux executables
+#I wish there was a way to find out how to do this automatically
+ans.txt
