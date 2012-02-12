@@ -1,6 +1,7 @@
 # Compiled Source files
 *.o
 *.exe
+*.class
 
 # OS specific files
 .DS_STORE*
@@ -15,3 +16,5 @@ Thumbs.db
 #The linux executables
 #I wish there was a way to find out how to do this automatically
 ans.txt
+input
+output
