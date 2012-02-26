@@ -1,0 +1,3 @@
+poor conductor 
+1 W L 
+1 A L
