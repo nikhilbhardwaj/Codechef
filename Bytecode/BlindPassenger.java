@@ -8,11 +8,11 @@ public class BlindPassenger
     String line = br.readLine();
     int t,n;
     //System.out.println(line);
-    t = Integer.parseInt(line);
+    t = Integer.parseInt(line.trim());
     for(int i=0;i<t;++i)
     {
       line = br.readLine();
-      n = Integer.parseInt(line); --n;
+      n = Integer.parseInt(line.trim()); --n;
       if(n == 0)
       {
         System.out.println("poor conductor");
