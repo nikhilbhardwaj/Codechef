@@ -23,6 +23,8 @@ public class BlindPassenger
         int row_no = 0, relative_seat_no = 0;
         row_no = (int) Math.ceil(n/5.0);
         relative_seat_no = n % 5;
+        if(relative_seat_no == 0) relative_seat_no = 5;
+        //System.out.println(relative_seat_no);
         if(row_no % 2 == 0)
         {
           //even row, need to reverse the relative seat no
