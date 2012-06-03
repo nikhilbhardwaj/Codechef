@@ -17,7 +17,7 @@ class SUMOFPOW
     //base cases
     if(n == 0)
     {
-      return 1L;
+      return 2L;
     }
     else if(n == 1)
     {
