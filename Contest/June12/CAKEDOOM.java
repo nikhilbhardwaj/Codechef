@@ -53,7 +53,7 @@ class DoomsBakery
     int nextIndex = (currentIndex + 1) % str.length();
     for(int i=0; i<K; ++i)
     {
-      if(charToInt(array[previousIndex]) != i && 
+      if(charToInt(array[previousIndex]) != i &&
           charToInt(array[nextIndex]) != i)
       {
         return i;
@@ -74,7 +74,7 @@ class DoomsBakery
       char [] tmp = str.toCharArray();
       //handles the trickiest of all cases ;)
       //K=2 and str = "??10??"
-      if(K == 2 && str.length() % 2 == 0 && str.length() > 3)
+      if(K % 2 == 0 && str.length() % 2 == 0 && str.length() > 3)
       {
         if(tmp[0] == '?' && tmp[1] == '?' && tmp[tmp.length - 1] != '1')
         {
