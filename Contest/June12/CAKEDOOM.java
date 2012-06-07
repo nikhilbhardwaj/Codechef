@@ -62,6 +62,16 @@ class DoomsBakery
     return -1;
   }
 
+  //to check if all aren't ? for strings of even length
+  static boolean allQuestions(char [] arr)
+  {
+    for(int i=0; i<arr.length; ++i)
+    {
+      if(arr[i] != '?' ) return false;
+    }
+    return true;
+  }
+
   //the method that actually deals with the checks for the question
   public void process()
   {
@@ -74,9 +84,10 @@ class DoomsBakery
       char [] tmp = str.toCharArray();
       //handles the trickiest of all cases ;)
       //K=2 and str = "??10??"
-      if(K % 2 == 0 && str.length() % 2 == 0 && str.length() > 3)
+      if(K == 2 && str.length() % 2 == 0 && str.length() > 3)
       {
-        if(tmp[0] == '?' && tmp[1] == '?' && tmp[tmp.length - 1] != '1')
+        if(allQuestions(tmp)) { tmp[0] = '0'; }
+        else if(tmp[0] == '?' && tmp[1] == '?' && tmp[tmp.length - 1] != '1')
         {
           tmp[0] = '1';
         }

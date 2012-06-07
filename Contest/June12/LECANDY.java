@@ -16,12 +16,11 @@ class Main
       long C = Long.parseLong(input[1]);
       //Read line2 which has the Ak values
       input = br.readLine().split(" ");
-      long candiesNeeded = 0L;
       for(int i=0; i<input.length; ++i)
       {
-        candiesNeeded += Long.parseLong(input[i]);
+        C -= Integer.parseInt(input[i]);
       }
-      if(candiesNeeded < C) System.out.println("Yes");
+      if(C >= 0) System.out.println("Yes");
       else System.out.println("No");
     }
   }
