@@ -19,3 +19,5 @@ ans.txt
 input
 output
 *.input
+*.test*
+*.out*

@@ -18,7 +18,7 @@ ull modi(ull n)
     }
     else
     {
-      return (((2 % P) * (modi(n-1) % P)) % P);
+      return (( (modi(n-1) % P)<<1 ) % P);
     }
   }
 }
@@ -43,7 +43,6 @@ int main()
              else
              {
                  btw=modi(temp-1);
-          //       cout<<btw<<"@@"<<endl;
              if(n%2==0 )
              {
 
